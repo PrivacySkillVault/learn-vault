@@ -1,0 +1,57 @@
+site_name: "Privacy Skill Vault — Learn"
+site_url: "https://learn.privacyskillvault.com/"
+site_description: "Cybersecurity and Privacy Documentation"
+site_author: "Privacy Skill Vault"
+
+repo_name: "PrivacySkillVault/learn-vault"
+repo_url: "https://github.com/PrivacySkillVault/learn-vault"
+edit_uri: ""
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: "Switch to dark mode"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: "Switch to light mode"
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.keys
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
