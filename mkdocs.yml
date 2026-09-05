@@ -1,16 +1,22 @@
-site_name: "Privacy Skill Vault — Learn"
+# -----------------------------------------------------------------------------
+# Privacy Skill Vault - Learn Platform Configuration
+# Reference Implementation: learn-vault (Phase 5B Refined)
+# -----------------------------------------------------------------------------
+
+site_name: "Privacy Skill Vault"
 site_url: "https://learn.privacyskillvault.com/"
 site_description: "Cybersecurity and Privacy Documentation"
 site_author: "Privacy Skill Vault"
 
-repo_name: "PrivacySkillVault/learn-vault"
-repo_url: "https://github.com/PrivacySkillVault/learn-vault"
-edit_uri: ""
-
+# Theme Configuration
 theme:
   name: material
+  custom_dir: docs/overrides
+  logo: assets/branding/PSV-colored.png
   language: en
+  favicon: assets/branding/favicon.svg
   palette:
+    # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: slate
@@ -18,30 +24,38 @@ theme:
       toggle:
         icon: material/brightness-7
         name: "Switch to dark mode"
+    # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: slate
-      accent: indigo
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: "Switch to light mode"
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
-    - navigation.sections
     - navigation.top
-    - navigation.footer
-    - search.suggest
-    - search.highlight
-    - search.share
     - content.code.copy
+    - content.action.view
 
+# Custom Styling Layer (PSV Design System + Phase 5B Navigation)
+extra_css:
+  - stylesheets/extra.css
+
+# Markdown Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
@@ -53,5 +67,6 @@ markdown_extensions:
   - toc:
       permalink: true
 
+# Navigation Architecture (Phase 5B Exact 5-Item Navigation)
 nav:
-  - Home: index.md
+  - "Home": "index.md"
