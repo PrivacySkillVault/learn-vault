@@ -14,7 +14,7 @@ theme:
   custom_dir: docs/overrides
   logo: assets/branding/PSV-colored.png
   language: en
-  favicon: assets/branding/favicon.svg
+  favicon: assets/branding/favicon.ico
   palette:
     # Light Mode
     - media: "(prefers-color-scheme: light)"
