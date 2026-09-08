@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://learn.privacyskillvault.com/</loc>
-         <lastmod>2026-09-05</lastmod>
+         <lastmod>2026-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://learn.privacyskillvault.com/cyber-fraud/</loc>
+         <lastmod>2026-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://learn.privacyskillvault.com/defensive/</loc>
+         <lastmod>2026-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://learn.privacyskillvault.com/fundamentals/</loc>
+         <lastmod>2026-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://learn.privacyskillvault.com/offensive/</loc>
+         <lastmod>2026-09-08</lastmod>
     </url>
 </urlset>

@@ -866,7 +866,7 @@ input:focus-visible,
   font-family: var(--psv-font-sans);
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--psv-text-muted);
+  color: var(--psv-primary);
   padding: var(--psv-space-1) var(--psv-space-3);
   border-radius: var(--psv-radius-sm);
   text-decoration: none !important;
@@ -876,14 +876,12 @@ input:focus-visible,
 
 .psv-global-nav__link:hover {
   color: var(--psv-accent);
-  background-color: var(--psv-accent-subtle);
+  background-color: transparent;
 }
 
 .psv-global-nav__link--active {
   color: var(--psv-primary) !important;
   font-weight: 600;
-  background-color: var(--psv-surface-elevated);
-  border: 1px solid var(--psv-border);
 }
 
 .psv-mobile-menu-toggle {
